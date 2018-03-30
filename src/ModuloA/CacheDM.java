@@ -19,6 +19,7 @@ public class CacheDM {
         this.t_ind = LogBase(n_conj,2);
         this.op = LogBase (n_word_bloco,2);
         this.ob = LogBase (t_word,2);
+        this.t_end = this.t_word * 8;
         this.tag = t_end - t_ind - op - ob;
         this.overhad = (float) (1 + tag) * n_conj;
         this.t_total = (float) t_user + overhad;
