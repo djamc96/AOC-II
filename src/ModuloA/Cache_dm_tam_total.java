@@ -2,15 +2,15 @@ package ModuloA;
 
 public class Cache_dm_tam_total {
 
-    private int t_user;
-    private int t_word;
-    private int n_conj;
-    private int n_word_bloco;
+    private float t_user;
+    private float t_word;
+    private float n_conj;
+    private float n_word_bloco;
     private int t_ind;
     private int t_end;
     private int ob;
     private int op;
-    private int tag;
+    private float tag;
     private float overhad;
     private float t_total;
 
@@ -31,10 +31,10 @@ public class Cache_dm_tam_total {
         this.t_ind = LogBase(n_conj, 2);
         this.op = LogBase(n_word_bloco, 2);
         this.ob = LogBase(t_word, 2);
-        this.t_end = this.t_word * 8;
+        this.t_end = (int) (this.t_word * 8);
         this.tag = t_end - t_ind - op - ob;
-        this.overhad = (float) (1 + tag) * n_conj;
-        this.t_total = (float) t_user + overhad;
+        this.overhad = (float) (((1 + tag) * n_conj) / 8192);
+        this.t_total = (float) (t_user + overhad);
 
         cache.setT_user(t_user);
         cache.setT_word(t_word);
@@ -50,8 +50,8 @@ public class Cache_dm_tam_total {
         return cache;
     }
 
-    int LogBase(int x, int base) {
-        return (int) (Math.log(x) / Math.log(base));
+    int LogBase(float num, int base) {
+        return (int) (Math.log(num) / Math.log(base));
     }
 
 }

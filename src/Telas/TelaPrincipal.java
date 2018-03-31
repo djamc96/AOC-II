@@ -278,7 +278,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Verifique os Valores de Entrada!!", "Erro ao Calcular", JOptionPane.WARNING_MESSAGE);
         } else {
             //Le dados da tela e coloca na cache
-            CacheDMNew cache = new CacheDMNew(Integer.parseInt(jTextCapacidadeCache.getText()), Integer.parseInt(jTextLarguraPalavra.getText()), Integer.parseInt(jTextNumeroPalavra.getText()));
+            CacheDMNew cache = new CacheDMNew(Float.parseFloat(jTextCapacidadeCache.getText()), Float.parseFloat(jTextLarguraPalavra.getText()), Float.parseFloat(jTextNumeroPalavra.getText()));
             //inicializa a cache1
             CacheDMNew cache1 = new CacheDMNew(0, 0, 1);
             //Estancia Cache_dm_tam_total
@@ -289,7 +289,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             jTextObs.setText("Tamanho Total da cache: " + cache1.getT_total() + "\n\n" + "Capacidade  para armazenamento de informações do usuario: "
                     + cache1.getT_user() + "\n\n" + "Largura da palavra: " + cache1.getT_word() + "\n\n" + "Tamanho do campo de deslocamento: " + cache1.getOb() + "\n\n"
                     + "Número de conjuntos da cache: " + cache1.getN_conj() + "\n\n" + "Tamanho do campo de índice do endereço: " + cache1.getT_ind() + "\n\n"
-                    + "Tamanho do campo TAG do endereço: " + cache1.getTag() + "\n\n");
+                    + "Tamanho do campo TAG do endereço: " + cache1.getTag() + "\n\n " );
 
             this.jButtonGravar.setEnabled(true);
         }

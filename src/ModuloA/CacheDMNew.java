@@ -2,53 +2,53 @@ package ModuloA;
 
 public class CacheDMNew {
 
-    public int t_user;
-    public int t_word;
-    public int n_conj;
-    public int n_word_bloco;
+    public float t_user;
+    public float t_word;
+    public float n_conj;
+    public float n_word_bloco;
     public int t_ind;
     public int t_end;
     public int ob;
     public int op;
-    public int tag;
+    public float tag;
     public float overhad;
     public float t_total;
 
-    public CacheDMNew(int t_user, int t_word, int n_word_bloco) {
+    public CacheDMNew(float t_user, float t_word, float n_word_bloco) {
         this.t_user = t_user;
         this.t_word = t_word;
         this.n_word_bloco = n_word_bloco;
     }
 
-    public int getT_user() {
+    public float getT_user() {
         return t_user;
     }
 
-    public void setT_user(int t_user) {
+    public void setT_user(float t_user) {
         this.t_user = t_user;
     }
 
-    public int getT_word() {
+    public float getT_word() {
         return t_word;
     }
 
-    public void setT_word(int t_word) {
+    public void setT_word(float t_word) {
         this.t_word = t_word;
     }
 
-    public int getN_conj() {
+    public float getN_conj() {
         return n_conj;
     }
 
-    public void setN_conj(int n_conj) {
+    public void setN_conj(float n_conj) {
         this.n_conj = n_conj;
     }
 
-    public int getN_word_bloco() {
+    public float getN_word_bloco() {
         return n_word_bloco;
     }
 
-    public void setN_word_bloco(int n_word_bloco) {
+    public void setN_word_bloco(float n_word_bloco) {
         this.n_word_bloco = n_word_bloco;
     }
 
@@ -84,11 +84,11 @@ public class CacheDMNew {
         this.op = op;
     }
 
-    public int getTag() {
+    public float getTag() {
         return tag;
     }
 
-    public void setTag(int tag) {
+    public void setTag(float tag) {
         this.tag = tag;
     }
 
@@ -107,4 +107,5 @@ public class CacheDMNew {
     public void setT_total(float t_total) {
         this.t_total = t_total;
     }
+
 }
