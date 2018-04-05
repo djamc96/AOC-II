@@ -1,0 +1,15 @@
+Tamanho Total da cache: 6.625
+
+Capacidade  para armazenamento de informações do usuario: 4.0
+
+Largura da palavra: 4.0
+
+Tamanho do campo de deslocamento: 2
+
+Número de conjuntos da cache: 1024.0
+
+Tamanho do campo de índice do endereço: 10
+
+Tamanho do campo TAG do endereço: 20.0
+
+ 

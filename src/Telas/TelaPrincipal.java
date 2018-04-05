@@ -7,11 +7,14 @@ package Telas;
 
 import ModuloA.CacheDMNew;
 import ModuloA.Cache_dm_tam_total;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author Ritiele Aldeburg
+ * @author Ritiele Aldeburg , Anderson Cruz
  */
 public class TelaPrincipal extends javax.swing.JFrame {
 
@@ -255,9 +258,24 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonNovoActionPerformed
 
     private void jButtonGravarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGravarActionPerformed
-        this.limpaCampo();
-        this.jButtonGravar.setEnabled(false);
-        this.jButtonNovo.setEnabled(false);
+        File arquivo = new File("Calculo.txt");
+        String texto = "";
+        String[] txt = null;
+        PrintWriter pw = null;
+        try {
+            pw = new PrintWriter(new File("Calculo.txt"));
+        
+        texto = jTextObs.getText();
+        txt = texto.split("\n");
+        for (int i = 0; i < txt.length; i++) {
+            pw.println(txt[i]);
+        }
+        pw.close();
+         JOptionPane.showMessageDialog(null, "Calculo Salvo com Sucesso!!", "Mensagem", JOptionPane.INFORMATION_MESSAGE);
+  
+        } catch (FileNotFoundException ex) {
+            throw new RuntimeException(ex);
+        }
 
     }//GEN-LAST:event_jButtonGravarActionPerformed
 
