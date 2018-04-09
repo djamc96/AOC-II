@@ -2,7 +2,7 @@ package ModuloB;
 
 /**
  *
- * @author anderson
+ * @author anderson & Ritiele
  */
 public class Calculo_ModuloB_Parte1 {
     private float t_user;
@@ -22,7 +22,7 @@ public class Calculo_ModuloB_Parte1 {
         this.t_user = cache.getT_user();
         this.n_word_bloco = cache.getN_word_bloco();
         
-        this.n_conj = (t_user * 1024) / t_word;
+        this.n_conj = (t_user * 1024) / (t_word * n_word_bloco);
         this.t_ind = LogBase(n_conj, 2);
         this.op = LogBase(n_word_bloco, 2);
         this.ob = LogBase(t_word, 2);

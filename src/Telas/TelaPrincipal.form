@@ -25,39 +25,42 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="LabelValorCus112" min="-2" max="-2" attributes="0"/>
+                      <Component id="Label1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextCapacidadeCache" max="32767" attributes="0"/>
-                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="LabelValorCus113" min="-2" pref="213" max="-2" attributes="0"/>
+                      <Component id="jTextCapacidadeCache" min="-2" pref="107" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="Label2" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="480" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="Label3" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jTextLarguraPalavra" max="32767" attributes="0"/>
+                          <Component id="jTextNumeroPalavra" pref="88" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="388" max="-2" attributes="0"/>
+                  </Group>
               </Group>
           </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanel1" max="32767" attributes="0"/>
-                  <Component id="jScrollPane4" alignment="1" max="32767" attributes="0"/>
-                  <Component id="jSeparator1" alignment="1" max="32767" attributes="0"/>
+                  <Component id="jPanel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jSeparator1" min="-2" pref="688" max="-2" attributes="0"/>
+                          <Component id="jScrollPane4" min="-2" pref="688" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="LabelValorCus114" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jTextLarguraPalavra" max="32767" attributes="0"/>
-                  <Component id="jTextNumeroPalavra" pref="88" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -65,26 +68,26 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" pref="71" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jTextCapacidadeCache" pref="36" max="32767" attributes="0"/>
-                  <Component id="LabelValorCus112" max="32767" attributes="0"/>
+                  <Component id="Label1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="LabelValorCus113" pref="36" max="32767" attributes="0"/>
+                  <Component id="Label2" pref="36" max="32767" attributes="0"/>
                   <Component id="jTextLarguraPalavra" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="LabelValorCus114" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                  <Component id="Label3" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                   <Component id="jTextNumeroPalavra" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane4" pref="294" max="32767" attributes="0"/>
+              <Component id="jScrollPane4" pref="270" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -110,28 +113,36 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                  <Component id="jButtonNovo" pref="164" max="32767" attributes="0"/>
+                  <Component id="jButtonNovo" pref="145" max="32767" attributes="0"/>
                   <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                  <Component id="jButtonCalcular" min="-2" pref="167" max="-2" attributes="0"/>
+                  <Component id="jButtonCalcular" pref="115" max="32767" attributes="0"/>
                   <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                  <Component id="jButtonGravar" pref="172" max="32767" attributes="0"/>
+                  <Component id="jButtonGravar" pref="153" max="32767" attributes="0"/>
                   <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                  <Component id="jButtonSair" pref="138" max="32767" attributes="0"/>
+                  <Component id="jButtonSair" pref="119" max="32767" attributes="0"/>
+                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                  <Component id="jSeparator2" min="-2" pref="11" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+                  <Component id="jComboModulos" pref="109" max="32767" attributes="0"/>
                   <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButtonNovo" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
-                      <Component id="jButtonGravar" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
-                      <Component id="jButtonSair" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
-                      <Component id="jButtonCalcular" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="jSeparator2" alignment="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButtonNovo" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                          <Component id="jButtonGravar" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                          <Component id="jButtonSair" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                          <Component id="jButtonCalcular" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jComboModulos" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -196,6 +207,31 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCalcularActionPerformed"/>
           </Events>
         </Component>
+        <Component class="javax.swing.JComboBox" name="jComboModulos">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="16" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="3">
+                <StringItem index="0" value="Modulo A"/>
+                <StringItem index="1" value="Modulo B1"/>
+                <StringItem index="2" value="Modulo B2"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="jComboModulosItemStateChanged"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator2">
+          <Properties>
+            <Property name="orientation" type="int" value="1"/>
+          </Properties>
+        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JScrollPane" name="jScrollPane4">
@@ -228,6 +264,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="17" style="0"/>
         </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[1000, 10000]"/>
@@ -240,7 +277,7 @@
         <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="/*try{&#xd;&#xa; javax.swing.text.MaskFormatter telefone = new javax.swing.text.MaskFormatter(&quot;0123456789&quot;);&#xd;&#xa;&#xd;&#xa; jTextCapacidadeCache = new javax.swing.JFormattedTextField(telefone);&#xd;&#xa; }catch(Exception e){&#xd;&#xa;}*/&#xd;&#xa;&#xd;&#xa;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelValorCus112">
+    <Component class="javax.swing.JLabel" name="Label1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="16" style="0"/>
@@ -248,7 +285,7 @@
         <Property name="text" type="java.lang.String" value="Capacidade da cache (em KB) para armazenamento de informa&#xe7;&#xf5;es do usuario:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelValorCus113">
+    <Component class="javax.swing.JLabel" name="Label2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="16" style="0"/>
@@ -261,6 +298,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="17" style="0"/>
         </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[1000, 10000]"/>
@@ -270,7 +308,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextLarguraPalavraActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelValorCus114">
+    <Component class="javax.swing.JLabel" name="Label3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="16" style="0"/>
@@ -280,7 +318,6 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextNumeroPalavra">
       <Properties>
-        <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="17" style="0"/>
         </Property>

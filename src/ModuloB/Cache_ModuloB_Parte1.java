@@ -2,9 +2,10 @@ package ModuloB;
 
 /**
  *
- * @author anderson
+ * @author anderson & Ritiele
  */
 public class Cache_ModuloB_Parte1 {
+
     private float t_user;
     private float t_word;
     private float n_conj;
@@ -110,6 +111,5 @@ public class Cache_ModuloB_Parte1 {
     public void setT_total(float t_total) {
         this.t_total = t_total;
     }
-    
-    
+
 }

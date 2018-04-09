@@ -1,11 +1,11 @@
-
 package ModuloB;
 
 /**
  *
- * @author anderson
+ * @author anderson & Ritiele
  */
 public class Cache_ModuloB_Parte2 {
+
     private float t_bloco;
     private float n_conj;
     private int t_ind;
@@ -75,5 +75,5 @@ public class Cache_ModuloB_Parte2 {
     public void setOverhad(float overhad) {
         this.overhad = overhad;
     }
-    
+
 }
