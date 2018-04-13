@@ -25,10 +25,10 @@ public class Calc_CPI_proc {
         conv_ciclos(cpi);
         
         //calculo do cpi com cache nivel 2
-        this.fcd1 = cpi.getTils() + cpi.getTfcd_n1() + cpi.getLcd_n2_ci();
-        this.fcd2 = cpi.getTils() + cpi.getTfcd_n1() + cpi.getTfcd_n2() + cpi.getLmp_ci();
-        this.fci1 = cpi.getTfci_n1() + cpi.getLci_n2_ci();
-        this.fci2 = cpi.getTfci_n1() + cpi.getTfci_n2() + cpi.getLmp_ci();
+        this.fcd1 = (cpi.getTils() / 100) + (cpi.getTfcd_n1() / 100) + cpi.getLcd_n2_ci();
+        this.fcd2 = (cpi.getTils() / 100) + (cpi.getTfcd_n1() / 100) + (cpi.getTfcd_n2() / 100) + cpi.getLmp_ci();
+        this.fci1 = (cpi.getTfci_n1() /100) + cpi.getLci_n2_ci();
+        this.fci2 = (cpi.getTfci_n1() /100) + (cpi.getTfci_n2() / 100) + cpi.getLmp_ci();
         this.cpif = cpi.getCpi_base() + this.fcd1 + this.fcd2 + this.fci1 + this.fci2;
         cpi.setCfcd_n1_1(fcd1);
         cpi.setCfcd_n2_1(fcd2);
@@ -37,8 +37,8 @@ public class Calc_CPI_proc {
         cpi.setCpif_cn2(cpif);
         
         //calculo do cpi sem cache nivel 2
-        this.fcd1 = cpi.getTils() + cpi.getTfcd_n1() + cpi.getLmp_ci();
-        this.fci1 = cpi.getTfci_n1() + cpi.getLmp_ci();
+        this.fcd1 = (cpi.getTils() / 100) + (cpi.getTfcd_n1() / 100) + cpi.getLmp_ci();
+        this.fci1 = (cpi.getTfci_n1() / 100) + cpi.getLmp_ci();
         this.cpif = cpi.getCpi_base() + this.fcd1 + this.fci1;
         cpi.setCfcd_n1_2(fcd1);
         cpi.setCfci_n1_2(fci1);
