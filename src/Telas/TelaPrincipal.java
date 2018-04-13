@@ -400,6 +400,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                             + "Número de conjuntos da cache: " + cache1_b.getN_conj() + "\n\n"
                             + "Tamanho do campo de índice do endereço: " + cache1_b.getT_ind() + "\n\n"
                             + "Tamanho do campo TAG do endereço: " + cache1_b.getTag() + "\n\n ");
+                    jButtonGravar.setEnabled(true);
                 }
             } else {
                 if (jComboModulos.getSelectedIndex() == 2) {
@@ -422,6 +423,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                                 + "Offset de Bloco: " + cache1_b2.getO_bloco() + "\n\n"
                                 + "Tamanho do Bloco: " + cache1_b2.getT_bloco() + "\n\n"
                                 + "Tamanho do campo TAG do endereço: " + cache1_b2.getTag() + "\n\n ");
+                        jButtonGravar.setEnabled(true);
                     }
                 } else {
 
