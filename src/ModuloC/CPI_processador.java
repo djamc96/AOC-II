@@ -7,9 +7,10 @@ package ModuloC;
 
 /**
  *
- * @author Anderson e Ritiele 
+ * @author Anderson e Ritiele
  */
 public class CPI_processador {
+
     private float freq_proc;    //Frequência do processador
     private float lmp_ns;          //Latencia da memoria principal em nanosegundos = penalidade por acesso a memoria
     private float lcd_n2_ns;       //Latência da cache de dados nivel 2 em nanosegundos = penalidade por acesso a cache de dados nivel 2
@@ -24,7 +25,7 @@ public class CPI_processador {
     private float tfci_n2;      //taxa de falahas da cache de instruções nivel 2 em %
     private float tils;         //tava de intruções do tipo load store  
     private float t_proc;       //periodo do processador;
-    //variaveis pra calculo de falhas com cache nivel 2
+    //variaveis pra calculo de falhas// com cache nivel 2
     private float cfcd_n1_1;    //calculo de falhas da cache de dados nivel 1 considerando que haja cache de dados nivel 2
     private float cfci_n1_1;    //calculo de falhas de cache de instruções nivel 1 considerando que haja cache de intruções nivel 2
     private float cfcd_n2_1;    //calculo de falhad de cache de dados nivel 2
@@ -50,7 +51,7 @@ public class CPI_processador {
     public void setCpif_sn2(float cpif_sn2) {
         this.cpif_sn2 = cpif_sn2;
     }
-    
+
     public CPI_processador(float freq_proc, float lmp, float lcd_n2, float lci_n2, float cpi_base, float tfcd_n1, float tfci_n1, float tfcd_n2, float tfci_n2, float tils) {
         this.freq_proc = freq_proc;
         this.lmp_ns = lmp;
@@ -62,6 +63,9 @@ public class CPI_processador {
         this.tfcd_n2 = tfcd_n2;
         this.tfci_n2 = tfci_n2;
         this.tils = tils;
+    }
+
+    public CPI_processador() {
     }
 
     public float getLmp_ns() {
@@ -223,6 +227,5 @@ public class CPI_processador {
     public void setCfci_n1_2(float cfci_n1_2) {
         this.cfci_n1_2 = cfci_n1_2;
     }
-
 
 }

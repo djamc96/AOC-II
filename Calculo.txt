@@ -1,15 +1,45 @@
-Tamanho Total da cache: 18.5
+Frequência de operação do processador : 2.4 Ghz
 
-Capacidade  para armazenamento de informações do usuario: 10.0
+Periodo de operação do processador : 0.41666666 ns
 
-Largura da palavra: 10.0
+Latência para acesso a bloco na memória principal : 180.0 ns
 
-Tamanho do campo de deslocamento: 3
+Latência para acesso a bloco na memória principal : 432.0 ciclos
 
-Número de conjuntos da cache: 1024.0
+Latência para acesso a cache de dados nível 2 : 17.0 ns
 
-Tamanho do campo de índice do endereço: 10
+Latência para acesso a cache de dados nível 2 : 40.8 ciclos
 
-Tamanho do campo TAG do endereço: 67.0
+Latência para acesso a cache de instruções nível 2 :15.0 ns
 
- 
+Latência para acesso a cache de instruções nível 2 :36.0 ciclos
+
+CPI básico do processador (quando executa sem falhas de cache): 4.0 ciclos
+
+Taxa de falhas na cache nível 1 de dados: 7.0 %
+
+Taxa de falhas na cache nível 1 de instruções: 5.0 %
+
+Taxa de falhas na cache nível 2 de dados: 1.5 %
+
+ Taxa de falhas na cache nível 2 de instruções: 1.0 %
+
+Percentual de instruções do tipo Load/Store: 40.0 %
+
+
+
+Calculo de falhas de cache de instruções nivel 1 : 1.8000001 ciclos
+
+Calculo de falhas de cache de dados nivel 1 : 1.1424 ciclos
+
+Calculo de falhas de cache de intruções nivel 2 : 0.216 ciclos
+
+Calculo de falhas de cache de dados nivel 2 : 0.18144 ciclos
+
+CPI final com a presença cache nivel 2 : 7.33984 ciclos
+
+Calculo de falhas de cache de instruções nivel : 21.6 ciclos
+
+Calculo de falhas de cache de dados nivel 1 : 12.096001 ciclos
+
+CPI final sem a presença cache nivel 2 : 37.696 ciclos
