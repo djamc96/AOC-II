@@ -66,6 +66,8 @@ public class NovaTela extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextObs = new javax.swing.JTextArea();
+        Label14 = new javax.swing.JLabel();
+        jTextNumeroVias = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jButtonNovo1 = new javax.swing.JButton();
@@ -181,7 +183,7 @@ public class NovaTela extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "  Calculadora de AOC II  ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 14))); // NOI18N
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "  Calculadora de AOC II  ", 0, 0, new java.awt.Font("Arial", 0, 14))); // NOI18N
 
         jButtonNovo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jButtonNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/add2.png"))); // NOI18N
@@ -223,7 +225,7 @@ public class NovaTela extends javax.swing.JFrame {
         });
 
         jComboModulos1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        jComboModulos1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Modulo A", "Modulo B1", "Modulo B2" }));
+        jComboModulos1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Modulo A", "Modulo B1", "Modulo B2", "Modulo D" }));
         jComboModulos1.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 jComboModulos1ItemStateChanged(evt);
@@ -316,6 +318,20 @@ public class NovaTela extends javax.swing.JFrame {
         jTextObs.setEnabled(false);
         jScrollPane4.setViewportView(jTextObs);
 
+        Label14.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
+        Label14.setText("Número de vias da cache:");
+
+        jTextNumeroVias.setFont(new java.awt.Font("Arial", 0, 17)); // NOI18N
+        jTextNumeroVias.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextNumeroVias.setText("1");
+        jTextNumeroVias.setEnabled(false);
+        jTextNumeroVias.setMaximumSize(new java.awt.Dimension(1000, 10000));
+        jTextNumeroVias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextNumeroViasActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -331,12 +347,16 @@ public class NovaTela extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Label2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Label3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(Label3, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jTextLarguraPalavra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jTextNumeroPalavra, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(527, 527, 527))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Label14, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextNumeroVias, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(111, 111, 111))))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(5, 5, 5))
@@ -358,8 +378,11 @@ public class NovaTela extends javax.swing.JFrame {
                     .addComponent(Label1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Label2, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
-                    .addComponent(jTextLarguraPalavra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Label2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jTextLarguraPalavra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Label14, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextNumeroVias, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Label3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -367,7 +390,7 @@ public class NovaTela extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 323, Short.MAX_VALUE)
                 .addGap(5, 5, 5))
         );
 
@@ -384,11 +407,11 @@ public class NovaTela extends javax.swing.JFrame {
                 .addGap(5, 5, 5))
         );
 
-        jTabbedPane1.addTab("  AOC II - Modulos A e B  ", jPanel2);
+        jTabbedPane1.addTab("  AOC II - Modulos A,B e D ", jPanel2);
 
         jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "  Calculadora de AOC II  ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 14))); // NOI18N
+        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "  Calculadora de AOC II  ", 0, 0, new java.awt.Font("Arial", 0, 14))); // NOI18N
 
         jButtonNovo1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jButtonNovo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/add2.png"))); // NOI18N
@@ -1107,6 +1130,10 @@ public class NovaTela extends javax.swing.JFrame {
         this.jButtonSair1.setEnabled(true);
     }//GEN-LAST:event_jButtonNovo1ActionPerformed
 
+    private void jTextNumeroViasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNumeroViasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextNumeroViasActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1148,6 +1175,7 @@ public class NovaTela extends javax.swing.JFrame {
     private javax.swing.JLabel Label11;
     private javax.swing.JLabel Label12;
     private javax.swing.JLabel Label13;
+    private javax.swing.JLabel Label14;
     private javax.swing.JLabel Label2;
     private javax.swing.JLabel Label3;
     private javax.swing.JLabel Label4;
@@ -1190,6 +1218,7 @@ public class NovaTela extends javax.swing.JFrame {
     private javax.swing.JTextField jTextLatenciaNivel2;
     private javax.swing.JTextField jTextLatenciaPrincipal;
     private javax.swing.JTextField jTextNumeroPalavra;
+    private javax.swing.JTextField jTextNumeroVias;
     private javax.swing.JTextArea jTextObs;
     private javax.swing.JTextField jTextPercentual;
     private javax.swing.JTextField jTextfrequencia;

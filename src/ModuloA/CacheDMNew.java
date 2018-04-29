@@ -2,17 +2,17 @@ package ModuloA;
 
 public class CacheDMNew {
 
-    public float t_user;
-    public float t_word;
-    public float n_conj;
-    public float n_word_bloco;
-    public int t_ind;
-    public int t_end;
-    public int ob;
-    public int op;
-    public float tag;
-    public float overhad;
-    public float t_total;
+    private float t_user;
+    private float t_word;
+    private float n_conj;
+    private float n_word_bloco;
+    private int t_ind;
+    private int t_end;
+    private int ob;
+    private int op;
+    private float tag;
+    private float overhad;
+    private float t_total;
 
     public CacheDMNew(float t_user, float t_word, float n_word_bloco) {
         this.t_user = t_user;

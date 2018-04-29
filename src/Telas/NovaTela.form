@@ -60,8 +60,8 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="  AOC II - Modulos A e B  ">
-                <Property name="tabTitle" type="java.lang.String" value="  AOC II - Modulos A e B  "/>
+              <JTabbedPaneConstraints tabName="  AOC II - Modulos A,B e D ">
+                <Property name="tabTitle" type="java.lang.String" value="  AOC II - Modulos A,B e D "/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -106,14 +106,18 @@
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="Label2" max="32767" attributes="0"/>
-                                      <Component id="Label3" max="32767" attributes="0"/>
+                                      <Component id="Label3" pref="267" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="jTextLarguraPalavra" alignment="0" max="32767" attributes="0"/>
                                       <Component id="jTextNumeroPalavra" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="527" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="Label14" pref="267" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jTextNumeroVias" min="-2" pref="99" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -143,8 +147,12 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="Label2" alignment="0" pref="36" max="32767" attributes="0"/>
-                              <Component id="jTextLarguraPalavra" alignment="0" max="32767" attributes="0"/>
+                              <Component id="Label2" alignment="0" max="32767" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="jTextLarguraPalavra" alignment="3" max="32767" attributes="0"/>
+                                  <Component id="Label14" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                                  <Component id="jTextNumeroVias" alignment="3" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -154,7 +162,7 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jScrollPane4" pref="389" max="32767" attributes="0"/>
+                          <Component id="jScrollPane4" pref="323" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -280,10 +288,11 @@
                           <Font name="Arial" size="16" style="0"/>
                         </Property>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                          <StringArray count="3">
+                          <StringArray count="4">
                             <StringItem index="0" value="Modulo A"/>
                             <StringItem index="1" value="Modulo B1"/>
                             <StringItem index="2" value="Modulo B2"/>
+                            <StringItem index="3" value="Modulo D"/>
                           </StringArray>
                         </Property>
                       </Properties>
@@ -401,6 +410,30 @@
                     </Component>
                   </SubComponents>
                 </Container>
+                <Component class="javax.swing.JLabel" name="Label14">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="16" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="N&#xfa;mero de vias da cache:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="jTextNumeroVias">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Arial" size="17" style="0"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="1"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[1000, 10000]"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextNumeroViasActionPerformed"/>
+                  </Events>
+                </Component>
               </SubComponents>
             </Container>
           </SubComponents>
